@@ -24,15 +24,48 @@
   </button>
   <button type="submit">Submit</button><br> <!-- Added Button 3rd type-->
   <button type="button">create an Account</button><br> <!-- Added Button 4th type-->
-
+<hr>
   <input type="number" />
   <input type="date" />
   <input type="time" />
   <input type="color" />
   <input type="range" />
   <input type="file" />
-  <input type="checkbox" />
-  <input type="radio" />
+<hr>
+  <form>
+    <div>
+      Choose Subject:
+        <input type="checkbox" id="Maths" name="subject"/> <!-- Added Checkbox -->
+        <label for="Maths">Maths</label> <!-- Added Label for Checkbox -->
+        <input type="checkbox" id="Science" name="subject"/>
+        <label for="Science">Science</label>
+        <input type="checkbox" id="English" name="subject"/>
+        <label for="English">English</label>
+    </div>
+<hr>
+    <div> <!-- if name attribute is same then radio lable is grouped -->
+      <input type="radio" id="Male" name="gender"/> <!-- Added Radio Button -->
+      <label for="Male">Male:</label> <!-- Added Label for Radio Button-->
+      <input type="radio" id="Female" name="gender"/>
+      <label for="Female">Female:</label>
+      <input type="radio" id="Other" name="gender"/>
+      <label for="Other">Other:</label>
+    </div>
+    <div>
+      Select Your Profession:
+        <select name="profession" id="profession"> <!-- Added Select -->
+            <option value="stud">Student</option> <!-- Added Select Option -->
+            <option value="teac">Teacher</option>
+            <option value="dev" selected>Developer</option> <!-- Added Selected -->
+        </select>
+    </div>
+    <lable for="vol">Select Volume</lable> <!-- Added Label for Range -->
+    <input type="range" id="vol" name="vol" min="0" max="100" step="10" value="50"/> <!-- Added Range,min max,step,selected value -->
+  </form>
+
+
+
+
   <input type="email" />
   <input type="url" />
   <input type="tel" />
