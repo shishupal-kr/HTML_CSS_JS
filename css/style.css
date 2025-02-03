@@ -1,22 +1,18 @@
-/* Add this to your css/style.css file */
-
-/* Style for the body */
-body {
-  font-family: Arial, sans-serif;
-  background-color: white;
-  margin: 0;
-  padding: 20px;
-}
-
-/* Style for the h1 element */
-h1 {
-  color: #333;
+h1{
+  color: red;
+  background-color: yellow;
+  font-size: 50px;
   text-align: center;
 }
-
-/* Style for the paragraph */
-p {
-  color: #666;
-  font-size: 16px;
-  line-height: 1.5;
+h2{
+  color: purple;
+  background-color: gold;
+}
+p{
+  color: blue;
+  font-size: 20px;
+}
+button{
+  background-color: goldenrod;
+  color: red;
 }
