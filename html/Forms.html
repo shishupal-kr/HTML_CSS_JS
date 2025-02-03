@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms Create</title>
+</head>
+<body>
+
+<form action="/server">
+
+  <div> <!-- Added Div -->
+  <label><b>Username:</b> <!-- Added Label -->
+  <input type="text" placeholder="Enter Username" name="user"/> <br> <!-- placeholder,Added Name -->
+  </label>
+  </div>
+
+  <label for="password"><b>Password:</b> <!-- Added Label with for -->
+  <input type="password" placeholder="Enter Password" id="password"/><br>
+  </label>
+
+  <input type="submit" value="Click me" /> <!-- Added Button -->
+  <button> <!-- Added Button 2nd type, this is the best way to create button-->
+    <input type="reset"/>
+  </button>
+  <button type="submit">Submit</button><br> <!-- Added Button 3rd type-->
+  <button type="button">create an Account</button><br> <!-- Added Button 4th type-->
+
+  <input type="number" />
+  <input type="date" />
+  <input type="time" />
+  <input type="color" />
+  <input type="range" />
+  <input type="file" />
+  <input type="checkbox" />
+  <input type="radio" />
+  <input type="email" />
+  <input type="url" />
+  <input type="tel" />
+</form>
+
+<hr>
+<form action="https://www.google.com/search" method="get"> <!-- Added Form action and method from google url-->
+  <input type="text" name="q" placeholder="search in google"/> <!-- Added Search -->
+  <button>Search</button> <!-- Added Button -->
+</form>
+
+</body>
+</html>
