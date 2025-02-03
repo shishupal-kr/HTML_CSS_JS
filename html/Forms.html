@@ -6,6 +6,20 @@
 </head>
 <body>
 
+<!--
+for is used to connect the label with the input field
+type is used to set the type of the input field
+placeholder is used to show the hint in the input field
+id is used to connect the label with the input field
+value is used to show the text on the button
+name is used to get the value of the input field
+step is used to set the step of the range
+selected is used to select the default value
+checked is used to select the default value
+min is used to set the minimum value of the range
+max is used to set the maximum value of the range
+-->
+
 <form action="/server">
 
   <div> <!-- Added Div -->
@@ -29,7 +43,6 @@
   <input type="date" />
   <input type="time" />
   <input type="color" />
-  <input type="range" />
   <input type="file" />
 <hr>
   <form>
@@ -42,7 +55,7 @@
         <input type="checkbox" id="English" name="subject"/>
         <label for="English">English</label>
     </div>
-<hr>
+    <hr>
     <div> <!-- if name attribute is same then radio lable is grouped -->
       <input type="radio" id="Male" name="gender"/> <!-- Added Radio Button -->
       <label for="Male">Male:</label> <!-- Added Label for Radio Button-->
@@ -51,6 +64,7 @@
       <input type="radio" id="Other" name="gender"/>
       <label for="Other">Other:</label>
     </div>
+
     <div>
       Select Your Profession:
         <select name="profession" id="profession"> <!-- Added Select -->
@@ -59,16 +73,23 @@
             <option value="dev" selected>Developer</option> <!-- Added Selected -->
         </select>
     </div>
+
     <lable for="vol">Select Volume</lable> <!-- Added Label for Range -->
     <input type="range" id="vol" name="vol" min="0" max="100" step="10" value="50"/> <!-- Added Range,min max,step,selected value -->
   </form>
+  <hr>
 
+    <label for="msg">About Yourself:</label> <!-- Added Label for Message -->
+    <textarea id="msg" rows="5" cols="40" name="" placeholder="Enter your message here"></textarea> <!-- Added Textarea -->
+  <hr>
 
-
-
-  <input type="email" />
-  <input type="url" />
-  <input type="tel" />
+  <label for="email">Email:</label> <!-- Added Label for Email -->
+  <input type="email" id="email" placeholder="Enter your Email id"/><br>
+  <label for="url">URL:</label> <!-- Added Label for URL -->
+  <input type="url" id="url" placeholder="Enter your website url"/><br>
+  <label for="tel">Phone No.:</label> <!-- Added Label for Phone -->
+  <input type="tel" id="tel" placeholder="Enter phone No."/>
+  <button type="submit"/>Submit</button><!-- Added Submit -->
 </form>
 
 <hr>
