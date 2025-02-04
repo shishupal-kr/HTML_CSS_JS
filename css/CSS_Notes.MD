@@ -3,7 +3,7 @@ selector {
 color: value;
 }
 
-el>id>class>-priority of css properties.
+el>id>class>pseudo-class>attribute  -priority of css properties.
 
 ## 1. color
 The `color` property sets the text color of an element.
