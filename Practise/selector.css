@@ -57,3 +57,61 @@ input[type="text"]{
 input[type="password"]{
   color: green;
 }
+
+/* Pseudo-class selector -it means that the style will be applied to the element that is in a specific state.
+:hover
+:active
+:visited
+:link
+:disabled
+:checked
+:nth-child(n)
+:nth-of-type(n)
+etc */
+button:hover{
+  background-color: pink;
+  color: white;
+}
+
+h3:hover{
+  text-decoration: none;
+}
+
+button:active{
+  background-color: hotpink;
+  color: black;
+}
+
+p:active{
+  color: green;
+}
+
+input[type="radio"]:checked + label{
+  color: green;
+  font-weight: bold;
+}
+
+.post:nth-of-type(2n){
+  background-color: orange;
+}
+
+/* Pseudo-element selector -it means that the style will be applied to a part of the element.
+::first-letter
+::first-line
+::before
+::after
+::selection
+ */
+
+h1::first-letter {
+  color: blue;
+}
+
+#pr::first-line{
+    color: red;
+}
+
+#pr::selection{
+    background-color: yellow;
+    color: black;
+}
