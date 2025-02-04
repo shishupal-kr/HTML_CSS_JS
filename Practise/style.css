@@ -1,0 +1,59 @@
+h1 {
+  color: red;
+}
+
+h3 {
+  color: #7b07ef;
+}
+
+p {
+  color: black;
+}
+
+/* ID selector -it is used to apply the style to a single element. */
+
+#login {
+  background-color: white;
+}
+#signup {
+  background-color: red;
+}
+
+/* Class selector -it is used to apply the style to multiple elements. */
+
+.upvote {
+  background-color: green;
+}
+.follow {
+  background-color: yellow;
+  color: purple;
+}
+
+/* Descendant selector -it means that the style will be applied to the element that is inside another element.
+but you can also write nav a{} to select direct a   */
+nav ul li a {
+  color: #cf818e;
+}
+
+/* adjacent sibling selector -it means that the style will be applied to the element that is immediately after another element. */
+p + h3{
+  text-decoration: underline;
+}
+
+.upvote + button{
+  background-color: cornflowerblue;
+}
+
+/* child combinator selector -it means that the style will be applied to the element that is a direct child of another element. */
+div > input{
+  background-color: darksalmon;
+}
+
+/* Attribute selector -it means that the style will be applied to the element that has a specific attribute. */
+input[type="text"]{
+  color: blue;
+}
+
+input[type="password"]{
+  color: green;
+}
