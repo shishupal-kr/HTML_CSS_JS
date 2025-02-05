@@ -1,0 +1,60 @@
+/*
+CSS Transition List
+	1.	transition-property – Specifies which property to transition.
+	2.	transition-duration – Defines the duration of the transition.
+	3.	transition-timing-function – Sets the speed curve of the transition.
+	4.	transition-delay – Delays the transition before it starts.
+	5.	transition – A shorthand property to set all transition properties in one line.
+
+CSS Transform property is used to rotate, scale, skew, or translate an element.
+It is used to change the appearance of an element in the browser.
+The transform property is used in conjunction with the transition property to create smooth animations.
+  1.	translate(x, y) – Moves the element.
+	2.	rotate(angle) – Rotates the element.
+	3.	scale(x, y) – Enlarges or shrinks the element.
+	4.	skew(x-angle, y-angle) – Tilts the element.
+	5.	rotateX(angle) – Tilts forward/backward (3D effect).
+	6.	rotateY(angle) – Tilts left/right (3D effect).
+	7.	translateX(n) – Moves element horizontally.
+	8.	translateY(n) – Moves element vertically.
+	9.	scaleX(n) – Stretches or shrinks width.
+	10.	scaleY(n) – Stretches or shrinks height.
+	11.	skewX(angle) – Skews the element horizontally.
+	12.	skewY(angle) – Skews the element vertically.
+	13.	matrix(a, b, c, d, e, f) – Combines multiple transforms in one function.
+	14.	perspective(n) – Adds perspective for 3D transformations.
+
+	scale(1.5) – Enlarges the element by 1.5 times.
+
+*/
+
+div {
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  padding: 5px;
+  margin: 50px;
+  text-align: center;
+  transition: 2s;   /*transition: 1s is used to make the transition smooth */
+}
+
+div:hover {
+  background-color: lightblue;
+  border-radius: 50%;   /*border-radius: 50% is used to make the border circular */
+  transform: rotate(360deg);   /*transform: rotate(360deg) is used to rotate the div by 360 degrees */
+  opacity: 0.2; /*opacity:0 to 1 is used to make the div transparent */
+}
+
+#three {
+  background-color: lightgreen;
+  transform: scale(1.5);   /*transform: scale(1.5) is used to enlarge the div by 1.5 times */
+}
+
+#two {
+  transform: translate(50px, 50px);   /*transform: translate(50px, 50px) is used to move the div by 50px in both x and y directions */
+}
+
+#one {
+  transform: skew(20deg, 20deg);   /*transform: skew(20deg, 20deg) is used to tilt the div by 20 degrees in both x and y directions */
+}

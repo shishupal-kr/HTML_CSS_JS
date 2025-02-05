@@ -1,0 +1,38 @@
+#outer {
+  height: 150px;
+  width: 150px;
+  background-color: #f3d411;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+#eye {
+  height: 30px;
+  width: 30px;
+  background-color: #090000;
+  border-radius: 50%;
+  position: relative;
+  top: 40px;
+  left: 30px;
+}
+
+#eye2 {
+  height: 30px;
+  width: 30px;
+  background-color: #090000;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 90px;
+}
+
+#mouth {
+  height: 20px;
+  width: 70px;
+  background-color: red;
+  position: relative;
+  top: 40px;
+  left: 40px;
+  border-top-style: dotted;
+  border-radius: 50px;
+}

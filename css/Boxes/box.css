@@ -1,11 +1,68 @@
 /* Box css properties
-. height
-. width
-. padding
-. border
-. margin */
+. height - height of the box
+. width - width of the box
+. border - border-width, border-style, border-color, border-radius, border-top-left-radius etc.
+. padding - padding-top, padding-right, padding-bottom, padding-left
+. margin - margin-top, margin-right, margin-bottom, margin-left
+. box-shadow - box-shadow: 10px 10px 5px #888888;
+
+. background-image
+. background-color
+. background-repeat
+. background-position
+. background-size
+. background-blend-mode
+. background-text
+*/
+
 
 div {
   height: 100px;
   width: 500px;
+  background-color: #f0f0f0;
+  border: 1px;
+  border-style: solid;
+  border-color: #000;
+
+  /* padding */
+  padding: 10px; /* all sides */
+  padding-right: 20px; /* top padding */
+
+  /* margin */
+  margin: 10px; /* all sides */
+  margin-top: 50px; /* top margin */
+}
+
+h1 {
+  text-align: center;
+  width: 500px;
+  /* border style */
+  border: 4px solid #000; /* border-width, border-style, border-color */
+  border-color: orange;
+  border-right-style: dashed;
+  border-top: 1px solid blue;
+  border-bottom: 2px dotted red;
+
+/*   border-radius: */
+  border-radius: 10px; /* all corners */
+  border-top-right-radius: 50px; /* top right corner */
+}
+
+button{
+  border: 1px solid black;
+  background-color: red;
+  margin: 10px;
+  color: white;
+  padding: 10px 25px; /* top and bottom padding 10px, left and right padding 25px ,4type of padding*/
+  border-radius: 50px;
+}
+
+#two{
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#three{
+  background-image: url('https://www.w3schools.com/css/img_flwr.gif');
+  background-color: lightblue;
+  background-text: center;
 }

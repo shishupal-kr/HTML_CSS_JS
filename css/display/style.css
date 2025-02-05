@@ -1,0 +1,25 @@
+h1 {
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+  border: 2px solid #000;
+  margin: 5px;
+  display: inline-block;
+}
+div{
+  background-color: #f0f0f0;
+  border: 2px solid #000;
+  height: 200px;
+  width: 400px;
+  padding: 5px;
+  margin: 5px;
+}
+
+span {
+  background-color: red;
+  border: 2px solid #000;
+  height: 100px;
+  width: 200px;
+  padding: 50px;
+  margin: 20px;
+}
