@@ -1,0 +1,11 @@
+/* Box css properties
+. height
+. width
+. padding
+. border
+. margin */
+
+div {
+  height: 100px;
+  width: 500px;
+}

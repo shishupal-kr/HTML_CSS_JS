@@ -58,16 +58,18 @@ input[type="password"]{
   color: green;
 }
 
+input[type="radio"]:checked + label{
+  color: green;
+  font-weight: bold;
+}
+
+input[id="no"]:checked + label{
+  color: red;
+  font-weight: bold;
+}
 /* Pseudo-class selector -it means that the style will be applied to the element that is in a specific state.
-:hover
-:active
-:visited
-:link
-:disabled
-:checked
-:nth-child(n)
-:nth-of-type(n)
-etc */
+:hover, :active, :visited, :link, :disabled, :checked, :nth-child(n), :nth-of-type(n) etc */
+
 button:hover{
   background-color: pink;
   color: white;
@@ -86,22 +88,16 @@ p:active{
   color: green;
 }
 
-input[type="radio"]:checked + label{
-  color: green;
-  font-weight: bold;
-}
-
 .post:nth-of-type(2n){
   background-color: orange;
 }
 
+.follow:active{
+  color: red;
+}
+
 /* Pseudo-element selector -it means that the style will be applied to a part of the element.
-::first-letter
-::first-line
-::before
-::after
-::selection
- */
+::first-letter, ::first-line, ::before, ::after, ::selection etc*/
 
 h1::first-letter {
   color: blue;
@@ -111,7 +107,7 @@ h1::first-letter {
     color: red;
 }
 
-#pr::selection{
+#para::selection{
     background-color: yellow;
     color: black;
 }
