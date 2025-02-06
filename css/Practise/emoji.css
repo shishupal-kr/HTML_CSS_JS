@@ -6,33 +6,29 @@
   border-radius: 50%;
 }
 
-#eye {
+#eye,#eye2 {
   height: 30px;
   width: 30px;
   background-color: #090000;
   border-radius: 50%;
-  position: relative;
-  top: 40px;
-  left: 30px;
+  position: absolute;
+  display:inline-block;
+  margin: 10px;
+  top: 45px;
+  left: 35px;
 }
 
 #eye2 {
-  height: 30px;
-  width: 30px;
-  background-color: #090000;
-  border-radius: 50%;
-  position: relative;
-  top: 10px;
-  left: 90px;
+  left:80px;
 }
 
 #mouth {
   height: 20px;
   width: 70px;
   background-color: red;
-  position: relative;
-  top: 40px;
-  left: 40px;
-  border-top-style: dotted;
-  border-radius: 50px;
+  position: absolute;
+  margin: 20px;
+  top: 100px;
+  left: 30px;
+  border-radius: 0 0 50px 50px;
 }

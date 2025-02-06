@@ -1,0 +1,53 @@
+/*position - The position property specifies the type of positioning method used for an element
+static - Default value. Elements render in order, as they appear in the document flow
+relative - The element is positioned relative to its their normal position, the value of top, right, bottom, and left determines the final position of the element
+fixed - The element is positioned relative to the browser window. It will not move even if the window is scrolled
+absolute - The element is positioned relative to its parent element. If no parent element has a position other than static, the element will be positioned relative to the <html> element
+sticky - The element is positioned based on the user's scroll position.
+*/
+div {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-color: pink;
+  border: 3px solid black;
+  margin: 20px;
+  display: inline-block;
+}
+
+#static {
+  background-color: lightblue;
+  position: static;
+  top: 200px; /* This property has no effect */
+  left: 200px; /* This property has no effect */
+}
+
+#relative {
+  background-color: lightgreen;
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+
+#absolute{
+  background-color: lightcoral;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+#fixed {
+  background-color: lightyellow;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#sticky {
+  background-color: lightgray;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
