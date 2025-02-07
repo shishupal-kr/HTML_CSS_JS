@@ -1,3 +1,7 @@
+.site{
+  text-align:center;
+  color: #6a4cec;
+}
 .ham_menu{
   font-size: 24px;
   cursor: pointer;
@@ -72,6 +76,7 @@
   padding:0;
   border-radius: 5px;
   margin-left: 10px;
+  box-shadow: 2px 4px 8px black;
 }
 #ads{
   margin-left: 10px;
