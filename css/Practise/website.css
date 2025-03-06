@@ -1,6 +1,9 @@
-.site{
+h1 {
   text-align:center;
   color: #6a4cec;
+  border: 2px solid black;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 .ham_menu{
   font-size: 24px;
@@ -16,7 +19,7 @@
   right: 30px;
 }
 /* Search Icon */
-.search-icon {
+div i {
   position: absolute;
   right: 10px;
   font-size: 16px;
@@ -60,11 +63,11 @@
   display: flex;
   flex-direction: column;
 }
-.mainh p{
+#body h4{
   padding-left: 40px;
   padding-right: 40px;
 }
-.mainp{
+#body p{
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -108,6 +111,16 @@
   padding: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+#ads4{
+  margin-left: 20%;
+  margin-top: 10px;
+  background-color: yellow;
+  height: 200px;
+  width: 60%;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 #bfollow{
   background-color: pink;
   height: 100px;
@@ -116,4 +129,12 @@
   padding:0;
   border-radius: 5px;
   margin-left: 10px;
+}
+#bfollow h3 {
+  padding-left: 10px;
+  padding-top: 2px;
+}
+#bfollow a{
+  padding-left:10px;
+  display: block;
 }

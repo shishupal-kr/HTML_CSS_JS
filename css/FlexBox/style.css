@@ -1,0 +1,72 @@
+/* FlexBox - it sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
+flexbox-direction: row; main axis is left to right
+flexbox-direction: row-reverse; main axis is right to left
+flexbox-direction: column; main axis is top to bottom
+flexbox-direction: column-reverse; main axis is bottom to top
+
+JUSTIFY CONTENT - aligns flex items along the main axis of the current line of the flex container.
+justify-content: flex-start; items are packed toward the start line
+justify-content: flex-end; items are packed toward the end line
+justify-content: center; items are centered along the line
+justify-content: space-between; items are evenly distributed in the line; first item is on the start line, last item on the end line
+justify-content: space-around; items are evenly distributed in the line with equal space around them
+justify-content: space-evenly; items are distributed so that the spacing between any two items (and the space to the edges) is equal
+
+FLEX WRAP - specifies whether the flex items should wrap or not.
+flex-wrap: nowrap; all flex items will be on one line
+flex-wrap: wrap; flex items will wrap onto multiple lines, from top to bottom.
+flex-wrap: wrap-reverse; flex items will wrap onto multiple lines from bottom to top.
+
+ALIGN ITEM - aligns flex items along the cross axis of the current line of the flex container.
+align-items: stretch; stretch to fill the container (default)
+align-items: flex-start; items are placed at the start of the cross axis
+align-items: flex-end; items are placed at the end of the cross axis
+align-items: center; items are centered in the cross-axis
+align-items: baseline; items are aligned such as their baselines align
+
+ALIGN CONTENT - aligns a flex container's lines within the flex container when there is extra space in the cross-axis.
+align-content: flex-start | flex-end | center | space-between | space-around | stretch | space-evenly | baseline;
+
+ALIGN SELF - allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
+align-self: auto | flex-start | flex-end | center | baseline;
+
+FLEX SIZING - allow the flex items to grow and shrink so as to fit the given space.
+flex-grow - specifies how much a flex item will grow relative to the rest of the flex items.
+flex-shrink - specifies how much a flex item will shrink relative to the rest of the flex items.
+flex-basis - specifies the initial size of a flex item, before any available space is distributed.
+
+FLEX SHORTHAND
+flex: 1 1 200px; // flex-grow, flex-shrink, flex-basis
+flex: 1 1; // flex-grow, flex-shrink
+flex: 1; // flex-grow
+flex: auto; // flex-grow: 1, flex-shrink: 1, flex-basis: auto
+flex: none; // flex-grow: 0, flex-shrink: 0, flex-basis: auto
+
+*/
+
+h1{
+  text-align: center;
+}
+
+#container{
+  background-color: #f1f1f1;
+  border: 2px solid black;
+  height: 300px;
+  width: 70%;
+  display: flex; /* This is flex container */
+  flex-direction: row; /* This is flex container with auto width height */
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#org{
+  flex-basis: 50px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+#container div {
+  height: 100px;
+  width: 150px;
+  text-align: center;
+
+}

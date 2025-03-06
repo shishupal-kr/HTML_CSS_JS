@@ -1,0 +1,72 @@
+/* GRID - setting a contaner display to grid will make all the children elements to be displayed as grid items
+
+GRID LINE - grid line is the horizontal and vertical lines that make up the grid
+GRID TRACK - grid track is the space between two grid lines
+GRID CELL - grid cell is the space between two grid lines
+
+GRID TEMPLATE - they define line and track sizing
+grid-template-row - defines the height of the rows
+grid-template-column - defines the width of the columns
+
+
+GRID GAP - grid gap is the space between the grid items
+row-gap - defines the space between the rows
+column-gap - defines the space between the columns
+gap: 20px 20px; - defines the space between the rows and columns
+
+GRID COLUMN - grid column is the vertical division of the grid
+grid-column-start - defines the start position of the grid column
+grid-column-end - defines the end position of the grid column
+grid-column: 1 / 3; - defines the start and end position of the grid column
+
+GRID ROW - grid row is the horizontal division of the grid
+grid-row-start - defines the start position of the grid row
+grid-row-end - defines the end position of the grid row
+grid-row: 1 / 3; - defines the start and end position of the grid row
+
+GRID PROPERTY - they define the grid layout
+justify-items - aligns the grid items along the row axis
+justify-self - aligns the grid item along the row axis same as justify-items
+align-items - aligns the grid items along the column axis
+align-self - aligns the grid item along the column axis same as align-items
+place-items - aligns the grid items along both the row and column axis
+
+*/
+
+.container {
+  height: 300px;
+  width: 600px;
+  background-color: #f0f0f0;
+  border: 2px solid #000;
+  display: grid;
+  grid-template-rows: 50px 50px 50px; /* 3 rows of 50px each */
+  grid-template-columns: auto auto auto; /* 3 column of 100px each(if you write 100x 3times) or auto will make the columns to be of equal width */
+ /* grid-template-rows: repeat(3, 50px); 3 rows of 50px each */
+ /* grid-template-columns: repeat(3, 1fr); 3 columns of equal width */
+  row-gap: 30px; /* space between the rows */
+  column-gap: 60px; /* space between the columns */
+  justify-items: end; /* aligns the grid items along the row axis */
+  align-items: center; /* aligns the grid items along the column axis */
+}
+.one {
+  grid-column-start: 1; /* start from the first column */
+  grid-column-end: 3; /* end at the third column */
+  grid-column: 1 / 4; /* start from the first column and end at the third column */
+}
+
+.two{    /* get printed in the second row */
+  grid-row-start: 1; /* start from the first row */
+  grid-row-end: 3; /* end at the third row */
+  grid-row: 1 /span 3; /* start from the first row and span 3 rows */
+
+  place-self: center; /* aligns the grid items along both the row and column axis */
+
+}
+
+.item {
+  height: 50px;
+  width: 100px;
+  background-color: #79ec16;
+  text-align: center;
+  border: 2px solid #000;
+}

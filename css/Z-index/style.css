@@ -1,0 +1,34 @@
+/* Z-index
+Z-index is a CSS property that allows you to position elements in layers on top of one another.
+The z-index property in CSS controls the vertical stacking order of elements that overlap. As in, which one appears as if it is physically closer to you. z-index
+only effects elements that have a position value other than static (the default).
+
+Rule to use z-index:
+1. z-index only works on positioned elements (position:absolute, position:relative, or position:fixed).
+2. z-index only works on elements that have a background color or image.
+3. z-index only works on a parent element if the parent element has a position value other than static.
+syntax: z-index: number;
+*/
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: #86c7ec;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.one{
+  background-color: #90ec86;
+  position: relative; /* relative position required for z-index */
+  z-index: 2;
+}
+.two{
+  background-color: #ec8686;
+  position: relative;
+  bottom: 50px;
+}
